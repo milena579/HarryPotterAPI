@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#101010"
-    tools:context=".EstudantePorCasa">
+    tools:context=".Controller.EstudantePorCasa">
 
     <!-- TÍTULO -->
     <TextView
@@ -16,9 +16,10 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
         android:layout_marginTop="24dp"
+        android:fontFamily="@font/harrypf"
         android:text="Estudantes por Casa"
         android:textColor="#D4AF37"
-        android:textSize="24sp"
+        android:textSize="34dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"/>
@@ -47,9 +48,10 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/harrypf"
                 android:text="Selecione uma Casa"
                 android:textColor="#E8D9A8"
-                android:textSize="16sp"
+                android:textSize="28dp"
                 android:textStyle="bold"/>
 
             <!-- ESPAÇO -->
@@ -88,11 +90,12 @@
                         android:buttonTint="#D4AF37" />
 
                     <TextView
+                        android:id="@+id/txtGrifinoria"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Grifinória"
-                        android:textColor="#D4AF37"
-                        android:textSize="10sp"/>
+                        android:textColor="#AAAAAA"
+                        android:textSize="12sp"/>
                 </LinearLayout>
 
                 <!-- SONSERINA -->
@@ -117,11 +120,12 @@
                         android:buttonTint="#D4AF37"/>
 
                     <TextView
+                        android:id="@+id/txtSonserina"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Sonserina"
                         android:textColor="#AAAAAA"
-                        android:textSize="10sp"/>
+                        android:textSize="12sp"/>
                 </LinearLayout>
 
                 <!-- LUFA-LUFA -->
@@ -146,11 +150,12 @@
                         android:buttonTint="#D4AF37"/>
 
                     <TextView
+                        android:id="@+id/txtLufa"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Lufa-Lufa"
                         android:textColor="#AAAAAA"
-                        android:textSize="10sp"/>
+                        android:textSize="12sp"/>
                 </LinearLayout>
 
                 <!-- CORVINAL -->
@@ -175,11 +180,12 @@
                         android:buttonTint="#D4AF37"/>
 
                     <TextView
+                        android:id="@+id/txtCorvinal"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Corvinal"
                         android:textColor="#AAAAAA"
-                        android:textSize="10sp"/>
+                        android:textSize="12sp"/>
                 </LinearLayout>
 
             </RadioGroup>
