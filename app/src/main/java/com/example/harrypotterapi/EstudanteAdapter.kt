@@ -9,7 +9,6 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.squareup.picasso.Picasso
-
 class EstudanteAdapter(private val studentList: List<Estudante>) : RecyclerView.Adapter<EstudanteAdapter.StudentViewHolder>() {
     inner class StudentViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
         val imgStudent: ImageView = itemView.findViewById(R.id.imgEstudante)

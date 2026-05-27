@@ -81,8 +81,6 @@ class EstudantePorCasa : AppCompatActivity() {
                 buscarEstudantes(house)
             }
         }
-        
-        // Chamada inicial para carregar Grifinoria por padrão
         rbGrifinoria.performClick()
     }
 
