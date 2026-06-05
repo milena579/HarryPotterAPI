@@ -11,6 +11,6 @@ interface HPApiService {
 
     suspend fun getStudentsByHouse(@Path("house") house: String): Response<List<Estudante>>
 
-    @GET("spells")
+    @GET("api/spells")
     suspend fun getSpells(): Response<List<Feitico>>
 }

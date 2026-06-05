@@ -17,13 +17,13 @@
             android:name=".Controller.DatalhesFeitico"
             android:exported="false" />
         <activity
-            android:name=".Controller.Feiticos"
+            android:name=".Controller.EstudantePorCasa"
             android:exported="false" />
         <activity
             android:name=".Controller.MainActivity"
             android:exported="false" />
         <activity
-            android:name=".Controller.EstudantePorCasa"
+            android:name=".Controller.Feiticos"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
