@@ -8,9 +8,14 @@ import retrofit2.http.Path
 
 interface HPApiService {
     @GET("api/characters/house/{house}")
-
     suspend fun getStudentsByHouse(@Path("house") house: String): Response<List<Estudante>>
 
     @GET("spells")
     suspend fun getSpells(): Response<List<Feitico>>
+
+    @GET("api/character/{id}")
+    suspend fun getCharacterById(@Path("id") id: String): Response<List<Personagem>>
+ 
+    @GET("api/characters/staff")
+    suspend fun getAllStaff(): Response<List<Professor>>
 }

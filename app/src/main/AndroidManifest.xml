@@ -21,16 +21,18 @@
             android:exported="false" />
         <activity
             android:name=".Controller.MainActivity"
-            android:exported="false" />
+            android:exported="false" /> // trocar depois pra true
         <activity
             android:name=".Controller.EstudantePorCasa"
-            android:exported="true">
+            android:exported="true"> 
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Controller.PersonagemEspecifico" />
+        <activity android:name=".Controller.ProfessorEscola" />
     </application>
 
 </manifest>
