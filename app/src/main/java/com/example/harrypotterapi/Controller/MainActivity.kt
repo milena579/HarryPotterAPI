@@ -32,6 +32,10 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, EstudantePorCasa::class.java))
         }
 
+        findViewById<LinearLayout>(R.id.btnSpell).setOnClickListener {
+            startActivity(Intent(this, Feiticos::class.java))
+        }
+
         findViewById<LinearLayout>(R.id.btnExit).setOnClickListener {
             finishAffinity()
         }
