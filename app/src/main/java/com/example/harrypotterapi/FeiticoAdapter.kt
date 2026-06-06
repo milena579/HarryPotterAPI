@@ -13,40 +13,24 @@ class FeiticoAdapter(
     private val onClick: (Feitico) -> Unit
 
 ) : RecyclerView.Adapter<FeiticoAdapter.FeiticoViewHolder>() {
-    class FeiticoViewHolder(view: View)
-        : RecyclerView.ViewHolder(view) {
-
-        val nome =
-            view.findViewById<TextView>(R.id.txtNome)
+    class FeiticoViewHolder(view: View) : RecyclerView.ViewHolder(view) {
+        val nome = view.findViewById<TextView>(R.id.txtNome)
     }
 
-    override fun onCreateViewHolder(
-        parent: ViewGroup,
-        viewType: Int
-    ): FeiticoViewHolder {
-
-        val view = LayoutInflater
-            .from(parent.context)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): FeiticoViewHolder {
+        val view = LayoutInflater.from(parent.context)
             .inflate(
                 R.layout.item_feitico,
                 parent,
                 false
             )
-
         return FeiticoViewHolder(view)
     }
 
-    override fun onBindViewHolder(
-        holder: FeiticoViewHolder,
-        position: Int
-    ) {
-
+    override fun onBindViewHolder(holder: FeiticoViewHolder, position: Int) {
         val spell = lista[position]
-
         holder.nome.text = spell.name
-
         holder.itemView.setOnClickListener {
-
             onClick(spell)
         }
     }

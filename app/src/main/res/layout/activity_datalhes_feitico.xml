@@ -4,10 +4,10 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
+    android:id="@+id/detalhesFeitico"
     android:layout_height="match_parent"
     android:background="#0B0B0B">
 
-    <!-- Botão voltar -->
     <TextView
         android:id="@+id/txtVoltar"
         android:layout_width="wrap_content"
@@ -20,7 +20,6 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"/>
 
-    <!-- Card principal -->
     <androidx.cardview.widget.CardView
         android:layout_width="0dp"
         android:layout_height="wrap_content"
@@ -37,7 +36,6 @@
             android:orientation="vertical"
             android:padding="24dp">
 
-            <!-- Ícone -->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -45,7 +43,6 @@
                 android:textSize="60sp"
                 android:layout_gravity="center"/>
 
-            <!-- Nome -->
             <TextView
                 android:id="@+id/txtNome"
                 android:layout_width="wrap_content"
@@ -57,14 +54,12 @@
                 android:textStyle="bold"
                 android:layout_marginTop="20dp"/>
 
-            <!-- Linha -->
             <View
                 android:layout_width="80dp"
                 android:layout_height="3dp"
                 android:background="#C8A96A"
                 android:layout_marginTop="8dp"/>
 
-            <!-- Descrição -->
             <TextView
                 android:id="@+id/txtDescricao"
                 android:layout_width="match_parent"
